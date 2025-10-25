@@ -41,7 +41,7 @@ export const Web3AuthProvider = ({ children }: { children: ReactNode }) => {
       try {
         const web3authInstance = new Web3Auth({
           clientId,
-          web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
+          web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_MAINNET,
         });
 
         await web3authInstance.init();
